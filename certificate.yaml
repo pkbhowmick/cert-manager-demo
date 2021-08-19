@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: example-local
+  namespace: default
+spec:
+  secretName: example-local-tls
+  issuerRef:
+    name: ca-issuer
+    kind: Issuer
+  commonName: example.local
