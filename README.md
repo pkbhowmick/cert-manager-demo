@@ -19,8 +19,7 @@ $ helm install \
 
 2. Create a ca.key and ca.crt for Certificate Issuer
 ```bash
-$ 
-openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out ca.crt -keyout ca.key
+$ openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out ca.crt -keyout ca.key
 
 ```
 
